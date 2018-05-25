@@ -1,0 +1,366 @@
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #000;
+     font-size: 12px;
+     line-height: 1.4;
+     font-family: Helvetica, Arial, sans-serif;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header, section, footer{
+  width: 100%;
+}
+.main{
+  width: 100%;
+}
+.jwli{
+  width: 50%;
+}
+.top{
+  width: 100%;
+}
+.bottom{
+  width: 50%;
+  float: left;
+}
+.blurb{
+  width: 65%;
+  margin-left: 5%;
+  float: left;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+header nav{
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+header nav ul{
+  padding: 0;
+  text-align: center;
+}
+header nav ul li {
+  margin: 0 3% 0 3%;
+  display: inline;
+}
+header nav ul li a{
+  color: black;
+  text-decoration: none;
+}
+.button a{
+  font-size: .8rem;
+  padding: .5% 2% .5% 2%;
+  color: white;
+  background-color: black;
+}
+.hamburger{
+  display: none;
+}
+.first{
+  padding: 0 5% 0% 5%;
+  background-color: lightgrey;
+}
+.jwli{
+  float: left;
+}
+.img1{
+  height: 150px;
+  width: 40%;
+  margin: 5% 30% 0 30%;
+  float: left;
+}
+.jwli h1{
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+.jwli p{
+  font-size: 1rem;
+  margin: 1% 0 5% 0;
+}
+.jwli input{
+  padding: 1% 30% 1% .5%;
+}
+.jwli figure{
+  font-size: .7rem;
+  margin: 0 0 .3% 0;
+}
+.jwli a{
+  margin-left: 2%;
+  padding: 1% 4% 1% 4%;
+  color: white;
+  background-color: grey;
+  text-decoration: none;
+}
+img{
+  height: 400px;
+  width: 40%;
+  margin: 0 5% 0 5%;
+  background-color: lightgrey;
+  float: right;
+}
+.main{
+  padding: 5% 6% 5% 6%;
+}
+.top p{
+  font-size: 1.5rem;
+  text-align: center;
+}
+.bottom{
+  padding: 2% 2% 2% 0;
+}
+.bottom span{
+  padding: 2% 0 0 0;
+  font-weight: bold;
+  border-top: 1px solid black;
+}
+.left p{
+  margin: 0 10% 0 15%;
+}
+.right p{
+  margin: 0 15% 0 10%;
+}
+.main figcaption{
+  text-align: center;
+  color: lightgrey;
+}
+.text{
+  width: 60%;
+  padding: 0 5% 0 2%;
+  float: left;
+}
+.text h2{
+  text-align: left;
+}
+.photo{
+  width: 40%;
+  text-align: center;
+  float: left;
+}
+.photo img{
+  height: 150px;
+  width: 50%;
+  margin: 2% 25% 0 25%;
+}
+.fish h2{
+  text-align: center;
+}
+.blurb{
+  margin: 0 10% 0 10%;
+  padding: 2% 2% 2% 2%;
+  width: 80%;
+  border: 1px solid grey;
+}
+.blurb p{
+  font-size: .9rem;
+}
+.blurb img{
+  height: 250px;
+  width: 30%;
+  float: left;
+}
+.bold{
+  font-size: 1rem;
+  font-weight: bold;
+}
+.foundation, .simmons{
+  padding: 3% 5% 3% 5%;
+  width: 50%;
+  float: left;
+}
+.foundation h3, .simmons h3{
+  font-size: 1rem;
+  color: lightgrey;
+}
+.clear{
+  background-color: grey;
+}
+footer section{
+  float: left;
+}
+footer nav{
+  padding: 1% 10% 1% 10%;
+  background-color: #9FC8DF;
+}
+footer nav label{
+  font-size: .9rem;
+  margin-right: 38%;
+  color: white;
+}
+footer nav input{
+  padding: .5% 15% .5% 0;
+}
+footer nav a{
+  padding: .5% 2% .5% 2%;
+  margin-right: 6%;
+  background-color: grey;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.copy{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-bottom: 1px solid white;
+}
+.copy p{
+  color: white;
+  float: left;
+}
+.copy ul{
+  list-style-type: none;
+}
+.copy ul li{
+  display: inline;
+}
+.copy ul li a{
+  padding-left: 4%;
+  color: white;
+  text-decoration: none;
+  float: right;
+}
+.other{
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+.other ul{
+  list-style-type: none;
+  float: left;
+}
+.other ul li a{
+  color: white;
+  text-decoration: none;
+}
+
+
+/*************************************/
+/********** Mobile Response *********/
+/***********************************/
+@media only screen and (max-width:414px){
+  body{
+    margin: 0;
+  }
+  header nav ul li{
+    display: none;
+  }
+  .jwli{
+    padding-bottom: 10px;
+  }
+  .jwli h1{
+    text-align: center;
+  }
+  .hamburger{
+    display: block;
+  }
+  .jwli{
+    width: 100%;
+  }
+  .figure{
+    display: none;
+  }
+  .bottom{
+    width: 100%;
+  }
+  .bottom p{
+    width: 100%;
+    margin: 0;
+  }
+  .text{
+    width: 100%;
+  }
+  .text h2{
+    text-align: center;
+  }
+  .photo{
+    display: none;
+  }
+  .blurb{
+    margin: 0;
+    width: 100%;
+    border: none;
+  }
+  .blurb img{
+    margin: 0;
+    width: 100%;
+  }
+  .bold{
+    text-align: center;
+  }
+  .foundation, .simmons{
+    width: 100%;
+  }
+  .copy{
+    margin: 0;
+    width: 100%;
+  }
+  .other{
+    margin: 0;
+    width: 100%;
+  }
+}
+
+/*************************************/
+/********** Tablet Response *********/
+/***********************************/
+@media (min-width:415px) and (max-width:1024px){
+  .text{
+    width: 100%;
+  }
+  .photo{
+    width: 50%;
+    float: left;
+  }
+  .photo img{
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+  .clear nav label{
+    margin-right: 10%;
+  }
+  .clear nav input{
+    padding-right: 20%;
+  }
+}
